@@ -1,0 +1,114 @@
+*{
+
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #212529;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: #111111;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #666666;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.container{
+    width: 100%;
+}
+/* header */
+.header{
+    height: 84px;
+    background-color: aqua;
+}
+/* header end */
+
+.hero{
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+
+.hero .hero-item{
+    height: 314px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.hero .hero-item-large {
+    height: 638px;
+    margin-right: auto;
+}
+
+.hero-text{
+    padding-left: 30px;
+}
+.hero-text h1{
+    font-family: "Cookie", cursive;
+    color: #111111;
+}
+h4{
+    font-weight: 700;
+}
+.hero-text a{
+    color: #111111;
+    font-weight: 600;
+}
