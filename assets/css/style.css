@@ -1,5 +1,5 @@
 *{
-
+    box-sizing: border-box;
 }
 
 html{
@@ -67,10 +67,8 @@ a{
 img {
     max-width: 100%;
 }
-
-
-.container{
-    width: 100%;
+.fa{
+    font-family: 'FontAwesome';
 }
 /* header */
 .header{
@@ -112,3 +110,109 @@ h4{
     color: #111111;
     font-weight: 600;
 }
+
+/*Discount*/
+.Discount{
+    width: ;
+}
+.mb-6{
+    margin-bottom: 60px !important;
+}
+.summer_2019{
+    margin-bottom: 10px;
+}
+.container{
+    width: 100%;
+}
+.discount-summer{
+    background-color: #f4f4f4;
+    justify-content: center;
+    padding: 75px 90px 50px;
+    max-width: 585px;
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.discount-summer::before {
+    content: "";
+    position: absolute;
+    width: 183px;
+    height: 183px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.discount-summer .discount_text, 
+.discount-summer .summer_2019, 
+{
+    position: relative;
+    z-index: 1;
+}
+.shop_now{
+    color: #000;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.discount_text{
+    font-size: 12px;
+}
+.summer_2019{
+    font-size: 60px;
+    font-family: "Cookie", cursive;
+    color: #CA1515;
+}
+.countdown span{
+    width: 101.25px;
+    height: 45px;
+    margin-bottom: 15px;
+}
+.countdown span div{
+    font-size: 30px;
+    font-weight: bold;
+}
+.countdown span p{
+    font-size: 14px;
+}
+.sale50{
+    color: #CA1515;
+    font-weight: bold;
+}
+.sale50 span{
+    color: #111111;
+    margin-right: 4px;
+    font-weight: lighter;
+    font-size: 14px;
+}
+/*Discount end*/
+
+/*service*/
+.service_item{
+    position: relative;
+    padding-bottom: 65px;
+    margin-bottom: 25px;
+}
+.service_item i{
+    font-family: 'FontAwesome' !important;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 40px;
+    color: #CA1515;
+    font-style: normal;
+}
+.service_item h6{
+    color: #111111;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.service_item p{
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+}
+/*service end*/
