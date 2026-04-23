@@ -1,242 +1,204 @@
-*{
-<<<<<<< HEAD
-=======
+/* ===== RESET ===== */
+* {
     margin: 0;
     padding: 0;
->>>>>>> 6e23ccafde128ce4491c309c0f41d36e48f73af4
     box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+/* ===== BODY ===== */
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-body{
-    font-family: "Montserrat", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    color: #212529;
+/* ===== HEADER ===== */
+.header {
+    padding: 20px 60px;
+    border-bottom: 1px solid #eee;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-    color: #111111;
-    font-weight: 400;
-}
-
-h1 {
-    font-size: 6.8rem;
-}
-
-h2 {
-    font-size: 3.6rem;
-}
-
-h3 {
-    font-size: 3rem;
-}
-
-h4 {
-    font-size: 2.4rem;
-}
-
-h5 {
-    font-size: 1.8rem;
-}
-
-h6 {
-    font-size: 1.6rem;
-}
-
-p {
-    font-size: 1.4rem;
-    font-family: "Montserrat", sans-serif;
-    color: #666666;
-    font-weight: 400;
-    line-height: 1.7;
-    margin: 0 0 15px 0;
-}
-
-a{
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    height:auto;
-    display:flex;
-}
-/* header */
-.header{
-    height: 84px;
-    background-color: antiquewhite;
-}
-/* header end */
-
-.hero{
-    overflow: hidden;
-    margin-top: 10px;
-    padding: 0px;
-}
-
-.hero .hero-item {
-    height: 314px;
+/* FLEX CHÍNH */
+.header-flex {
     display: flex;
     align-items: center;
-    padding-left: 30px;
-    background-size: cover;
-    background-position: center;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    justify-content: space-between;
 }
 
-.hero .hero-item-large {
-    height: 638px;
-    padding-left: 70px;
-    margin-right: 8px;
-    margin-left: -5px;
-}
-.hero .hero-item-large .hero-text{
-    max-width: 480px;
-}
-
-
-.hero>.container-fluid>.row {
-    margin-left: -3px;
-    margin-right: -12px;
-}
-
-.hero-text{
-    
-}
-.hero-text h1{
-    font-family: "Cookie", cursive;
-    color: #111111;
-}
-h4{
+/* ===== LOGO ===== */
+.logo {
+    font-size: 24px;
     font-weight: 700;
 }
-.hero-text a{
-    color: #111111;
-    font-weight: 600;
-    position: relative;
-    text-transform: uppercase;
-    padding-bottom: 3px;
+
+/* ===== MENU ===== */
+.menu {
+    display: flex;
+    gap: 30px;
 }
 
-/*Discount*/
-.Discount{
-    width: ;
-}
-.mb-6{
-    margin-bottom: 60px !important;
-}
-.summer_2019{
-    margin-bottom: 10px;
-}
-.container{
-    width: 100%;
-}
-.discount-summer{
-    background-color: #f4f4f4;
-    justify-content: center;
-    padding: 75px 90px 50px;
-    max-width: 585px;
-    height: 390px;
+.menu a {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
     position: relative;
-    overflow: hidden;
-    z-index: 1;
 }
-.discount-summer::before {
+
+/* GẠCH ĐỎ */
+.menu a::after {
     content: "";
     position: absolute;
-    width: 183px;
-    height: 183px;
-    background: #ffffff;
-    border-radius: 50%;
-    top: 40%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: red;
+    transform: translateX(-50%);
+    transition: 0.3s;
 }
-.discount-summer .discount_text, 
-.discount-summer .summer_2019, 
-{
-    position: relative;
-    z-index: 1;
-}
-.shop_now{
-    color: #000;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: bold;
-}
-.discount_text{
-    font-size: 12px;
-}
-.summer_2019{
-    font-size: 60px;
-    font-family: "Cookie", cursive;
-    color: #CA1515;
-}
-.countdown span{
-    width: 101.25px;
-    height: 45px;
-    margin-bottom: 15px;
-}
-.countdown span div{
-    font-size: 30px;
-    font-weight: bold;
-}
-.countdown span p{
-    font-size: 14px;
-}
-.sale50{
-    color: #CA1515;
-    font-weight: bold;
-}
-.sale50 span{
-    color: #111111;
-    margin-right: 4px;
-    font-weight: lighter;
-    font-size: 14px;
-}
-/*Discount end*/
 
-/*service*/
-.service{
-    padding: 80px 0px 50px;
+.menu a:hover::after,
+.menu a.active::after {
+    width: 100%;
 }
-.service_box{
-    padding: 0px 15px 15px 0px;
+
+/* ===== RIGHT ===== */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
-.service_item{
-    position: relative;
-    margin-bottom: 25px;
-}
-.service_item i{
-    position: absolute;
-    left: 0;
-    top: 5px;
-    font-size: 40px;
-    color: #CA1515;
-    font-style: normal;
-}
-.service_item h6{
-    color: #111111;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-.service_item p{
-    margin: 0;
-    color: #666666;
+
+/* LOGIN */
+.login {
     font-size: 14px;
 }
-/*service end*/
+
+/* ===== ICON ===== */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    position: relative;
+}
+
+
+/* FIX SVG NHỎ HƠN */
+.icon svg {
+    stroke-width: 2;   /* 👈 QUAN TRỌNG */
+}
+
+/* ===== BADGE ===== */
+.badge {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+
+    min-width: 16px;
+    height: 16px;
+
+    background: #111;
+    color: #fff;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+/* ICON CHUNG */
+.icon i {
+    font-size: 22px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+/* SVG CHUẨN */
+.icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: #111;
+    stroke-width: 2.2;
+    fill: none;
+}
+
+/* FIX RIÊNG GIỎ HÀNG (pixel-perfect) */
+.cart svg {
+    transform: scale(1);   /* 👈 phóng nhẹ cho bằng heart */
+}
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+
+    letter-spacing: 1px;
+    line-height: 1;
+
+    text-transform: none;
+
+    color: #111;
+
+    /* 👇 làm chữ đậm hơn giống template */
+    text-shadow: 0.5px 0 #111;
+}
+.logo img {
+    height: 32px;
+    display: block;
+}
+/* ===== ICON CHUẨN GỌN ===== */
+
+/* Trái tim */
+.icon .fa-heart {
+    font-weight: 300;
+    position: relative;
+    top: -1px;
+}
+
+/* Giỏ hàng */
+.icon svg {
+    width: 26px;
+    height: 26px;
+    stroke-width: 1.3;
+}
+
+/* ===== BADGE CHUẨN ===== */
+.badge {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+
+    min-width: 16px;
+    height: 16px;
+
+    background: #111;
+    color: #fff;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+/* Badge riêng trái tim */
+.icon:not(.cart) .badge {
+    top: -8px;
+    right: -10px;
+}
+.icon .fa-search {
+    transform: scaleX(-1);
+}
+.icon:not(.cart) .badge {
+    top: -10px;   /* 👈 càng âm → càng lên cao */
+    right: -12px; /* 👈 càng âm → càng qua phải */
+}
+/* Badge giỏ hàng */
+.icon.cart .badge {
+    top: -7px;   /* 👈 tăng số âm để lên cao */
+    right: -6px;  /* giữ hoặc chỉnh nhẹ nếu cần */
+}
