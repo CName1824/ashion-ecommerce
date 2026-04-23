@@ -1,56 +1,204 @@
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* HEADER */
+/* ===== BODY ===== */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
+/* ===== HEADER ===== */
 .header {
+    padding: 20px 60px;
+    border-bottom: 1px solid #eee;
+}
+
+/* FLEX CHÍNH */
+.header-flex {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
-    padding: 20px 80px;
-
-    border-bottom: 1px solid #ddd;
-    background: white;
+    justify-content: space-between;
 }
 
-/* Logo */
-
-.logo img {
-    height: 50px;
+/* ===== LOGO ===== */
+.logo {
+    font-size: 24px;
+    font-weight: 700;
 }
 
-/* Menu */
-
-.menu ul {
-    list-style: none;
+/* ===== MENU ===== */
+.menu {
     display: flex;
     gap: 30px;
 }
 
-.menu ul li a {
+.menu a {
     text-decoration: none;
-    color: black;
-    font-weight: 500;
+    color: #111;
+    font-size: 14px;
+    position: relative;
 }
 
-/* Active menu */
-
-.menu ul li a.active {
-    border-bottom: 2px solid red;
+/* GẠCH ĐỎ */
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: red;
+    transform: translateX(-50%);
+    transition: 0.3s;
 }
 
-/* Icons */
+.menu a:hover::after,
+.menu a.active::after {
+    width: 100%;
+}
 
+/* ===== RIGHT ===== */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* LOGIN */
+.login {
+    font-size: 14px;
+}
+
+/* ===== ICON ===== */
 .icons {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+}
+
+.icon {
+    position: relative;
+}
+
+
+/* FIX SVG NHỎ HƠN */
+.icon svg {
+    stroke-width: 2;   /* 👈 QUAN TRỌNG */
+}
+
+/* ===== BADGE ===== */
+.badge {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+
+    min-width: 16px;
+    height: 16px;
+
+    background: #111;
+    color: #fff;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+/* ICON CHUNG */
+.icon i {
+    font-size: 22px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+/* SVG CHUẨN */
+.icon svg {
+    width: 22px;
+    height: 22px;
+    stroke: #111;
+    stroke-width: 2.2;
+    fill: none;
+}
+
+/* FIX RIÊNG GIỎ HÀNG (pixel-perfect) */
+.cart svg {
+    transform: scale(1);   /* 👈 phóng nhẹ cho bằng heart */
+}
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+
+    letter-spacing: 1px;
+    line-height: 1;
+
+    text-transform: none;
+
+    color: #111;
+
+    /* 👇 làm chữ đậm hơn giống template */
+    text-shadow: 0.5px 0 #111;
 }
 .logo img {
-    height: 50px;
-    width: auto;
+    height: 32px;
+    display: block;
+}
+/* ===== ICON CHUẨN GỌN ===== */
+
+/* Trái tim */
+.icon .fa-heart {
+    font-weight: 300;
+    position: relative;
+    top: -1px;
+}
+
+/* Giỏ hàng */
+.icon svg {
+    width: 26px;
+    height: 26px;
+    stroke-width: 1.3;
+}
+
+/* ===== BADGE CHUẨN ===== */
+.badge {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+
+    min-width: 16px;
+    height: 16px;
+
+    background: #111;
+    color: #fff;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+/* Badge riêng trái tim */
+.icon:not(.cart) .badge {
+    top: -8px;
+    right: -10px;
+}
+.icon .fa-search {
+    transform: scaleX(-1);
+}
+.icon:not(.cart) .badge {
+    top: -10px;   /* 👈 càng âm → càng lên cao */
+    right: -12px; /* 👈 càng âm → càng qua phải */
+}
+/* Badge giỏ hàng */
+.icon.cart .badge {
+    top: -7px;   /* 👈 tăng số âm để lên cao */
+    right: -6px;  /* giữ hoặc chỉnh nhẹ nếu cần */
 }
