@@ -1,4 +1,9 @@
 *{
+<<<<<<< HEAD
+=======
+    margin: 0;
+    padding: 0;
+>>>>>>> 6e23ccafde128ce4491c309c0f41d36e48f73af4
     box-sizing: border-box;
 }
 
@@ -10,7 +15,7 @@ html{
 body{
     font-family: "Montserrat", sans-serif;
     -webkit-font-smoothing: antialiased;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.5;
     color: #212529;
 }
@@ -24,39 +29,38 @@ h6 {
     margin: 0;
     color: #111111;
     font-weight: 400;
-    font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-    font-size: 70px;
+    font-size: 6.8rem;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 3.6rem;
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 h6 {
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 p {
-    font-size: 14px;
+    font-size: 1.4rem;
     font-family: "Montserrat", sans-serif;
     color: #666666;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.7;
     margin: 0 0 15px 0;
 }
 
@@ -66,38 +70,59 @@ a{
 
 img {
     max-width: 100%;
+    height:auto;
+    display:flex;
 }
+<<<<<<< HEAD
 .fa{
     font-family: 'FontAwesome';
 }
+=======
+
+
+>>>>>>> 6e23ccafde128ce4491c309c0f41d36e48f73af4
 /* header */
 .header{
     height: 84px;
-    background-color: aqua;
+    background-color: antiquewhite;
 }
 /* header end */
 
 .hero{
     overflow: hidden;
     margin-top: 10px;
+    padding: 0px;
 }
 
-
-.hero .hero-item{
+.hero .hero-item {
     height: 314px;
-    margin-bottom: 10px;
-    margin-right: 10px;
     display: flex;
     align-items: center;
-
+    padding-left: 30px;
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
+
 .hero .hero-item-large {
     height: 638px;
-    margin-right: auto;
+    padding-left: 70px;
+    margin-right: 8px;
+    margin-left: -5px;
+}
+.hero .hero-item-large .hero-text{
+    max-width: 480px;
+}
+
+
+.hero>.container-fluid>.row {
+    margin-left: -3px;
+    margin-right: -12px;
 }
 
 .hero-text{
-    padding-left: 30px;
+    
 }
 .hero-text h1{
     font-family: "Cookie", cursive;
@@ -109,7 +134,11 @@ h4{
 .hero-text a{
     color: #111111;
     font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 3px;
 }
+<<<<<<< HEAD
 
 /*Discount*/
 .Discount{
@@ -216,3 +245,15 @@ h4{
     font-size: 14px;
 }
 /*service end*/
+=======
+.hero-text a::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #ca1515;
+    content: "";
+}
+
+>>>>>>> 6e23ccafde128ce4491c309c0f41d36e48f73af4
