@@ -211,9 +211,14 @@ h4{
 /*Discount end*/
 
 /*service*/
+.service{
+    padding: 80px 0px 50px;
+}
+.service_box{
+    padding: 0px 15px 15px 0px;
+}
 .service_item{
     position: relative;
-    padding-bottom: 65px;
     margin-bottom: 25px;
 }
 .service_item i{
