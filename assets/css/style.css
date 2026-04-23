@@ -73,14 +73,6 @@ img {
     height:auto;
     display:flex;
 }
-<<<<<<< HEAD
-.fa{
-    font-family: 'FontAwesome';
-}
-=======
-
-
->>>>>>> 6e23ccafde128ce4491c309c0f41d36e48f73af4
 /* header */
 .header{
     height: 84px;
@@ -138,7 +130,6 @@ h4{
     text-transform: uppercase;
     padding-bottom: 3px;
 }
-<<<<<<< HEAD
 
 /*Discount*/
 .Discount{
@@ -226,7 +217,6 @@ h4{
     margin-bottom: 25px;
 }
 .service_item i{
-    font-family: 'FontAwesome' !important;
     position: absolute;
     left: 0;
     top: 5px;
@@ -245,15 +235,3 @@ h4{
     font-size: 14px;
 }
 /*service end*/
-=======
-.hero-text a::after{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 100%;
-    background: #ca1515;
-    content: "";
-}
-
->>>>>>> 6e23ccafde128ce4491c309c0f41d36e48f73af4
