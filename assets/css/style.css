@@ -1,18 +1,15 @@
-*{
-<<<<<<< HEAD
-=======
+* {
     margin: 0;
     padding: 0;
->>>>>>> 6e23ccafde128ce4491c309c0f41d36e48f73af4
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: "Montserrat", sans-serif;
     -webkit-font-smoothing: antialiased;
     font-size: 1.6rem;
@@ -61,26 +58,33 @@ p {
     color: #666666;
     font-weight: 400;
     line-height: 1.7;
-    margin: 0 0 15px 0;
+    margin: 0 0 10px 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 img {
     max-width: 100%;
-    height:auto;
-    display:flex;
+    height: auto;
+    display: flex;
 }
+
+.fa {
+    font-family: 'FontAwesome';
+}
+
 /* header */
-.header{
+.header {
     height: 84px;
     background-color: antiquewhite;
 }
+
 /* header end */
 
-.hero{
+/* hero */
+.hero {
     overflow: hidden;
     margin-top: 10px;
     padding: 0px;
@@ -103,7 +107,8 @@ img {
     margin-right: 8px;
     margin-left: -5px;
 }
-.hero .hero-item-large .hero-text{
+
+.hero .hero-item-large .hero-text {
     max-width: 480px;
 }
 
@@ -113,38 +118,45 @@ img {
     margin-right: -12px;
 }
 
-.hero-text{
-    
-}
-.hero-text h1{
+
+.hero-text h1 {
     font-family: "Cookie", cursive;
     color: #111111;
 }
-h4{
+
+.hero-text h4 {
     font-weight: 700;
 }
-.hero-text a{
+
+.hero-text a {
     color: #111111;
+    font-size: 1.4rem;
     font-weight: 600;
     position: relative;
     text-transform: uppercase;
-    padding-bottom: 3px;
+    padding-bottom: 4px;
+    display: inline-block;
 }
 
+
 /*Discount*/
-.Discount{
+.Discount {
     width: ;
 }
-.mb-6{
+
+.mb-6 {
     margin-bottom: 60px !important;
 }
-.summer_2019{
+
+.summer_2019 {
     margin-bottom: 10px;
 }
-.container{
+
+.container {
     width: 100%;
 }
-.discount-summer{
+
+.discount-summer {
     background-color: #f4f4f4;
     justify-content: center;
     padding: 75px 90px 50px;
@@ -154,6 +166,7 @@ h4{
     overflow: hidden;
     z-index: 1;
 }
+
 .discount-summer::before {
     content: "";
     position: absolute;
@@ -166,48 +179,58 @@ h4{
     transform: translate(-50%, -50%);
     z-index: -1;
 }
-.discount-summer .discount_text, 
-.discount-summer .summer_2019, 
+
+.discount-summer .discount_text,
+.discount-summer .summer_2019,
 {
     position: relative;
     z-index: 1;
 }
-.shop_now{
+
+.shop_now {
     color: #000;
     justify-content: center;
     font-size: 14px;
     font-weight: bold;
 }
-.discount_text{
+
+.discount_text {
     font-size: 12px;
 }
-.summer_2019{
+
+.summer_2019 {
     font-size: 60px;
     font-family: "Cookie", cursive;
     color: #CA1515;
 }
-.countdown span{
+
+.countdown span {
     width: 101.25px;
     height: 45px;
     margin-bottom: 15px;
 }
-.countdown span div{
+
+.countdown span div {
     font-size: 30px;
     font-weight: bold;
 }
-.countdown span p{
+
+.countdown span p {
     font-size: 14px;
 }
-.sale50{
+
+.sale50 {
     color: #CA1515;
     font-weight: bold;
 }
-.sale50 span{
+
+.sale50 span {
     color: #111111;
     margin-right: 4px;
     font-weight: lighter;
     font-size: 14px;
 }
+
 /*Discount end*/
 
 /*service*/
@@ -221,7 +244,9 @@ h4{
     position: relative;
     margin-bottom: 25px;
 }
-.service_item i{
+
+.service_item i {
+    font-family: 'FontAwesome' !important;
     position: absolute;
     left: 0;
     top: 5px;
@@ -229,14 +254,202 @@ h4{
     color: #CA1515;
     font-style: normal;
 }
-.service_item h6{
+
+.service_item h6 {
     color: #111111;
     font-weight: bold;
     margin-bottom: 5px;
 }
-.service_item p{
+
+.service_item p {
     margin: 0;
     color: #666666;
     font-size: 14px;
 }
+
 /*service end*/
+.hero-text a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: #ca1515;
+    content: "";
+}
+
+/* hero end */
+
+
+/* product */
+.list-product {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.list-product .title-col {
+    margin-bottom: 50px;
+}
+
+
+.list-product .title h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.list-product .title h4::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 70px;
+    background: #ca1515;
+    content: "";
+}
+
+.list-product .filter-control {
+    display: flex;
+    justify-content: end;
+}
+
+.list-product .filter-control li {
+    margin-left: 32px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.list-product .filter-control li::after {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #ca1515;
+    content: "";
+}
+
+.list-product .filter-control li.active::after {
+    width: 100%;
+}
+
+
+.list-product .product-item {
+    margin-bottom: 35px;
+    position: relative;
+}
+
+.list-product .product-item .label {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.list-product .product-item .label.new {
+    background-color: #36a300;
+}
+
+.list-product .product-item .label.out-of-stock {
+    background-color: #111111;
+}
+
+.list-product .product-item .label.sale {
+    background-color: #ca1515;
+}
+
+.list-product .product-item-pic {
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-item-pic .product-hover {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -50px;
+    text-align: center;
+    transition: all, 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.product-item:hover .product-hover {
+    bottom: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.product-hover li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.product-hover li a {
+    background: #ffffff;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    display: inline-block;
+    color: #111111;
+    transition: all, 0.3s;
+}
+
+.product-hover li a:hover {
+    background: #ca1515;
+    color: #ffffff;
+}
+
+.list-product .product-item-text {
+    text-align: center;
+    padding-top: 22px;
+}
+
+.list-product .product-item-text h6 {
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.product-item-text .rating {
+    margin-bottom: 5px;
+    line-height: 18px;
+}
+
+.product-item-text .rating i {
+    font-size: 1rem;
+    color: #e3c01c;
+    margin-right: -4px;
+}
+
+.product-item-text .product-price {
+    color: #111111;
+    font-weight: 600;
+}
+
+.product-item.sale .product-item-text .product-price {
+    color: #ca1515;
+}
+
+.product-item.sale .product-item-text .product-price span {
+    font-size: 1.4rem;
+    color: #b1b0b0;
+    text-decoration: line-through;
+    margin-left: 4px;
+}
+
+
+
+/* =========================================== */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
